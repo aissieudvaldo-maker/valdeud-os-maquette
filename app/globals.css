@@ -1,0 +1,16 @@
+:root { --bg:#0B0B12; --card:#14151F; --line:#23253A; --text:#F2F2F7; --muted:#8E90A8; --accent:#D4FF3A; --violet:#8B7BFF; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,"Segoe UI",sans-serif; min-height:100vh; }
+.center { min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:32px; max-width:420px; width:100%; }
+.logo { display:flex; align-items:center; gap:10px; font-weight:800; font-size:20px; margin-bottom:24px; }
+.logo i { width:36px; height:36px; border-radius:10px; background:var(--accent); color:#0B0B12; display:flex; align-items:center; justify-content:center; font-style:normal; }
+.logo span { color:var(--accent); }
+h1 { margin:0 0 8px; font-size:26px; }
+p { color:var(--muted); line-height:1.5; }
+.btn { display:flex; align-items:center; justify-content:center; width:100%; min-height:48px; border:0; border-radius:12px; background:var(--accent); color:#0B0B12; font-weight:800; font-size:16px; cursor:pointer; margin-top:20px; }
+.btn.ghost { background:#1A1B2A; color:var(--text); border:1px solid #2B2D44; }
+.badge { display:inline-block; border-radius:99px; padding:6px 14px; font-size:13px; font-weight:600; }
+.badge.pending { background:#2E2410; color:#F5B544; }
+.badge.active { background:#10281F; color:#5BD6A0; }
+.badge.suspended { background:#2E1015; color:#FF6B7A; }
